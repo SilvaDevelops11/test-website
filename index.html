@@ -1,32 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Home - SilvaDevelops</title>
+    <link rel="stylesheet" href="home.css">
+    <style>
+        .logo{
+    font-size: 3rem;
+    color: #b74b4b;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
 
-    </head>
-    <body>
-        <h1>Website about me</h1>
-        <p>this site is about everything to do with tech, university, and anything about me</p>
-    </body>
-           
-    <h2>About me</h2>
-<p>Hey, I’m Alvis Gordon—a tech geek, gamer, and proud dad. I’ve always been curious about how things work, which led me to building PCs, coding, and diving deep into gaming technology. I love tinkering with hardware, optimizing systems, and keeping up with the latest in tech, especially when it comes to Apple and gaming gear.
+.logo:hover{
+    transform: scale(1.1);
+}
 
-    Gaming is a huge part of my life. You’ll usually find me playing Civilization VI, GTA, Call of Duty: Black Ops 6, or Cities: Skylines—whether I’m conquering the world, causing chaos, strategizing in battle, or building the perfect city. I love games that let me think, create, and push my limits.
-    
-    Outside of tech and gaming, being a dad is the most important part of my life. My son means everything to me, and watching him grow has been the most rewarding adventure of all.
-    
-    I’m also autistic (high-functioning) and have CPTSD, ODD, ADD, and ADHD. It shapes how I see the world and how I approach challenges. Some days are harder than others, but I see it as part of what makes me unique, determined, and creative.
-    
-    Right now, I’m studying ICT (Cert IV) and working toward my Master’s in IT. My goal is to turn my love for technology into a career in IT, cybersecurity, or system development. I’m always learning, always improving, and always looking for new ways to grow.
-    
-    When I’m not gaming or buried in tech, I enjoy writing, learning new skills, and geeking out over the latest advancements. I believe in curiosity, resilience, and always pushing forward, no matter what life throws at me.
-    
-    If you’re into tech, gaming, or just good conversations, hit me up—I’m always down to connect!
-    
-    </p>
+nav a{
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
 
-    <footer>
-        <p>Created by: Alvis Gordon</a></p>
-    </footer>
-</html> 
- 
+nav a:hover,
+nav a.active{
+    color: #b74b4b;
+    border-bottom: 3px solid #b74b4b;
+}
+    </style>
+</head>
+<body>
+   <header>
+      <a href="index.html" class="logo">SilvaDevelops</a>
+
+      <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">projects</a>
+            <a href="resume.html">resume</a>
+            <a href="contact.html">Contact</a>
+            <a href="blog.html">blog</a>
+      </nav>
+   </header>
+   <section class="home">
+    <div class="home-img">
+    <img src="images/file.jpg" alt="">
+    <p>placeholder text</p>
+    </div>
+        <div class="home-content">
+        <h1>Welcome my name is <span>Alvis Gordon</span></h1>
+        <div 
+             class="typing-text">I'm a <span id="typed-text"></span><span class="caret"></span>
+            <script src="animation.js"></script>
+        </div>
+        <h2 class="section-heading">Welcome to SilvaDevelops.com</h2>
+        <p>I’m SilvaDevelops, a passionate IT enthusiast, gamer, and aspiring tech professional. Here, you’ll find a glimpse into my journey through the ever-evolving world of technology. Whether you’re here to explore my projects, learn about my experiences, or just share a common interest in tech, I’m glad you stopped by!</p>
+        
+                    <h2 class="section-heading">About This Website</h2>
+        <p>This website is a reflection of my curiosity and dedication to the IT field. As a self-taught programmer and current student at RMIT, I’ve built this space to showcase my skills, document my learning process, and connect with like-minded individuals. You’ll find my portfolio, blog, resume, and other resources here, all crafted with the hope of inspiring and collaborating with others in the tech community.</p>
+        <p>I created this website to have a central hub for my work and thoughts. It’s not just a portfolio; it’s a personal project that helps me grow and learn in the world of web development. I hope you find something valuable here, whether you’re a fellow tech enthusiast, a potential collaborator, or just someone curious about my journey. Thanks for visiting, and I look forward to connecting with you!</p>
+       
+            
+                <div class="social-icons">
+            <a href="https://www.linkedin.com/in/alvis-gordon-7a826731a/" target="_blank" title="LinkedIn"><i class= "fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/SilvaDevelops11" target="_blank" title="GitHub"><i class= "fa-brands fa-github"></i></a>
+            <a href="" target="_blank" title="Twitter"><i class= "fa-brands fa-x-twitter"></i></a>
+            <a href="" target="_blank" title="YouTube"><i class= "fa-brands fa-youtube"></i></a>
+        </div>
+          <a href="about.html" class="btn">Learn more</a>
+     </div>
+   </section>
+</body>
+</html>
